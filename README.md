@@ -1,56 +1,102 @@
-# Welcome to your Expo app 👋
+# Tionge's Planner
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**A mobile planning and reminder application built with React Native, Expo, and TypeScript.**
 
-## Get started
+## Overview
 
-1. Install dependencies
+Tionge's Planner is an iOS application designed to help users organize appointments, manage reminders, and keep track of important events.
 
-   ```bash
-   npm install
-   ```
+Originally developed under the name *OnTrack*, the project evolved into a standalone iPhone application with persistent data storage, scheduled local notifications, and a customized user interface.
 
-2. Start the app
+This project provided practical experience in mobile application development, from initial implementation and testing to native iOS configuration and deployment on a physical device.
 
-   ```bash
-   npx expo start
-   ```
+## Key Features
 
-In the output, you'll find options to open the app in a
+- **Reminder Management:** Create and save reminders for appointments, tasks, and important events.
+- **Scheduled Notifications:** Receive local notifications 60, 30, and 5 minutes before scheduled events.
+- **Persistent Data Storage:** Store reminders locally using AsyncStorage, allowing data to persist between application sessions.
+- **Custom User Interface:** A personalized planner interface with a custom application icon.
+- **Standalone iOS Application:** Runs directly on an iPhone without requiring Expo Go or an active development server.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Technology Stack
 
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+| Technology | Purpose |
+|---|---|
+| React Native | Cross-platform mobile application development |
+| Expo | Application development and native integration |
+| TypeScript | Type-safe application development |
+| Expo Router | Application routing |
+| Expo Notifications | Scheduling local reminder notifications |
+| AsyncStorage | Persistent local data storage |
+| Xcode | Native iOS builds, signing, and device deployment |
+| Git and GitHub | Version control and source code management |
 
-## Get a fresh project
+## Installation and Setup
 
-When you're ready, run:
+### Prerequisites
+
+- Node.js and npm
+- Git
+- macOS and Xcode for native iOS development
+- An iPhone or iOS simulator for testing
+
+### 1. Clone the repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/KettyKay/Tionges-Planner.git
+cd Tionges-Planner
 ```
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+### 2. Install dependencies
 
-### Other setup steps
+```bash
+npm install
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+### 3. Start the development server
 
-## Learn more
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 4. Run the iOS application
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+For a native iOS development build:
 
-## Join the community
+```bash
+npx expo run:ios
+```
 
-Join our community of developers creating universal apps.
+Native iOS development requires Xcode and the appropriate device signing configuration.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Project Development
+
+The application was developed through several stages:
+
+1. **Initial Development:** Created the application interface and implemented reminder management functionality.
+2. **Data Persistence:** Integrated AsyncStorage to retain saved reminders between sessions.
+3. **Notification Integration:** Implemented scheduled local notifications using Expo Notifications.
+4. **iOS Configuration:** Configured the native iOS project, application identity, icon, and development signing.
+5. **Device Deployment:** Built and installed the application on a physical iPhone using Xcode.
+6. **Release Build:** Created and tested an iOS Release build that operates without an active Expo development server.
+
+## Screenshots
+
+Screenshots demonstrating the application's interface and reminder functionality will be added here.
+
+## Future Enhancements
+
+Potential improvements include:
+
+- Recurring reminders and appointments
+- Calendar-based event visualization
+- Enhanced reminder categorization
+- Additional interface customization
+- Improved event management and organization
+
+## Skills Demonstrated
+
+This project demonstrates practical experience in:
+
+- React Native and TypeScript development
+- Mobile
