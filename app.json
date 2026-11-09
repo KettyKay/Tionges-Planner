@@ -1,14 +1,15 @@
 {
   "expo": {
-    "name": "ontrack",
+    "name": "Tionge's Planner",
     "slug": "ontrack",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/tionge-icon.png",
     "scheme": "ontrack",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/images/tionge-icon.png",
+      "bundleIdentifier": "com.tionge-1.ontrack"
     },
     "android": {
       "adaptiveIcon": {
